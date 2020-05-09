@@ -1,10 +1,8 @@
 require "pry"
 def run_guessing_game
   ans = rand(6)+1
-  puts ans
   input = gets.chomp
-  binding.pry
-  if input == ans 
+  if input.to_i == ans 
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
