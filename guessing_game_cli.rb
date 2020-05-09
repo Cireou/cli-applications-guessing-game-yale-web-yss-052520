@@ -2,9 +2,7 @@ def run_guessing_game
   ans = rand(6)+1
   puts ans
   input = gets.chomp
-  puts 
-  p ans
-  p input
+  binding.pry
   if input == ans 
     puts "You guessed the correct number!"
   elsif input == "exit"
